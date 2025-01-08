@@ -1,0 +1,1 @@
+{"command": "npm install && npm install @testing-library/jest-dom --save-dev","working_directory": "/home/kavia/workspace/Chatbot-/chatbot-ui"}

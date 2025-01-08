@@ -1,0 +1,282 @@
+{
+  "task_description": "{'component_name': 'Chatbot Component', 'description': 'This component handles all interactions with users, processes their queries, manages the AI model for response generation, and maintains interaction history. It also integrates with external systems for data retrieval and feedback collection.  \\n\\n**Core Technologies:**  \\n- **Technology Stack:** The component utilizes a robust technology stack including React.js for the frontend, Botpress for the chatbot framework, and JSON files for data handling.  \\n- **Primary Programming Languages:** JavaScript is the primary language used for developing the user interface and chatbot functionalities.  \\n- **Database Technologies:** JSON files are used for data storage, allowing for easy access and manipulation of data.  \\n- **Runtime Environment Requirements:** The application runs in a Node.js environment, ensuring compatibility with the chosen frameworks and libraries.  \\n- **Integration Technologies:** The component integrates with external APIs for medical data retrieval and user feedback collection.  \\n- **UI Technologies:** React.js is employed to create an intuitive and responsive user interface.  \\n\\n**Build and Development Tools:**  \\n- **Build System Setup:** The project utilizes npm for package management and build processes.  \\n- **Development Tools:** Visual Studio Code is recommended as the primary IDE, along with Git for version control.  \\n- **Testing Frameworks:** Jest and React Testing Library are used for unit and integration testing of the components.  \\n- **Deployment and CI/CD Requirements:** A CI/CD pipeline is set up using GitHub Actions to automate the build, test, and deployment processes.  \\n\\n**Functionality:** The Chatbot Component provides the following core functions and capabilities:  \\n1. **User Interface for Medical Queries:** Intuitive input field for users to type questions. Suggestions for query formulation.  \\n2. **Chatbot Interaction History:** Access to past interactions for user reference.  \\n3. **Related Topics Suggestion:** Analysis of user queries to suggest relevant medical topics.  \\n4. **User Feedback Mechanism:** Collection of user ratings and comments for response improvement.  \\n5. **Self-Training AI Model:** Continuous learning from user interactions to enhance response accuracy.  \\n6. **Diverse Medical Query Handling:** Capability to provide accurate information across a wide range of medical topics.  \\n7. **AI Model Performance Monitoring:** Real-time tracking of response accuracy and user satisfaction.  \\n8. **Data Access Layer for JSON Dataset:** Simplified interaction with the dataset for efficient data management.  \\n9. **Scalable Data Handling System:** Designed to handle increasing volumes of data without performance issues.  \\n10. **Security and Compliance Measures:** Robust security protocols to protect user data.  \\n11. **Automated Testing Suite:** Comprehensive testing of functionalities to ensure reliability.  \\n12. **CI/CD Pipeline Implementation:** Automation of build, test, and deployment processes for continuous integration.', 'interfaces': '', 'algorithms': '', 'pseudocode': '', 'repository_name': None, 'root_folder': None, 'branch': 'main', 'design': {'DataManagement': '**Data Storage Requirements:**  \\n- The training data is stored in a JSON file accessible via the provided link.  \\n\\n**Data Flow within the Component:**  \\n- User queries are processed against the JSON dataset to generate responses.', 'Description': 'The Chatbot Component is designed to handle user interactions through a front-end interface, utilizing a pre-defined JSON dataset for training and response generation.', 'ComponentInteractionsDescription': \"The Chatbot Component is designed to handle user interactions, process queries, manage AI model responses, and maintain interaction history. It integrates with external systems for data retrieval and feedback collection. The component is built using React.js for the frontend, Botpress for the chatbot framework, and JSON files for data handling. It operates in a Node.js environment and integrates with external APIs for data retrieval and feedback collection. The component's core functionalities include user interface for medical queries, interaction history management, AI model management, data handling, feedback mechanism, performance monitoring, security and compliance, and automated testing suite.\", 'Type': 'Design', 'BehaviorDescription': 'The Chatbot Component is designed to handle user interactions through a frontend chat panel, process queries, manage an AI model for response generation, and utilize a JSON dataset for training. The component focuses solely on the user interface and the dataset, eliminating any backend operations or CRUD functionalities.', 'InputsAndOutputs': '**Inputs:**  \\n- User queries (text input)  \\n\\n**Outputs:**  \\n- Chatbot responses (text output)  \\n\\n**Data Formats and Structures:**  \\n- User queries: String  \\n- API responses: JSON format (from the provided dataset)', 'Dependencies': '1. **React.js:**  \\n   - For building the user interface.  \\n2. **JSON Dataset:**  \\n   - The training data is sourced from the provided JSON file link.', 'Title': 'Design for Chatbot Component', 'configuration_state': 'configured', 'test_cases_config_state': 'configured', 'behavior_state': 'configured', 'TestCasesDescription': \"The test suite for the Chatbot Component includes a comprehensive set of test cases designed to validate the functionality, performance, and robustness of the component. The test cases are categorized into Unit Tests, Integration Tests, Performance Tests, and Robustness Tests, ensuring thorough coverage of all aspects of the component's capabilities.\", 'behavior_config_state': 'configured', 'component_interactions_state': 'configured', 'FunctionalRequirements': '1. **User Interface for Medical Queries:**  \\n   - Provide an intuitive input field for users to type questions.  \\n   - Display responses based on the training data from the JSON file.  \\n2. **Chatbot Interaction History:**  \\n   - Optionally, allow users to view their past interactions (if needed).', 'NonFunctionalRequirements': '1. **Performance Requirements:**  \\n   - The system should respond to user queries within 2 seconds.  \\n2. **Scalability Considerations:**  \\n   - The system should handle multiple concurrent users without performance degradation.  \\n3. **Security Requirements:**  \\n   - Basic security measures to protect user data during interactions.', 'TestingConsiderations': '**Key Areas for Testing:**  \\n- User input handling and response generation.  \\n- Loading and parsing of the JSON dataset.  \\n\\n**Specific Testing Requirements:**  \\n- Ensure the chatbot responds accurately based on the dataset.', 'specification_state': 'configured', 'branch': 'main', 'ErrorHandling': '**Potential Error Scenarios:**  \\n- Invalid user input (e.g., empty queries).  \\n- Issues with loading the JSON dataset.  \\n\\n**Error Handling Strategies:**  \\n- Display user-friendly error messages without crashing the application.', 'component_interactions_config_state': 'configured', 'testcases_state': 'configured', 'PurposeAndResponsibilities': 'The Chatbot Component is designed to handle user interactions through a front-end interface, utilizing a pre-defined JSON dataset for training and response generation.'}, 'Algorithm': ['{\"Type\": \"Algorithm\", \"Details\": \"1. Display input field for user queries.\\\\n2. Provide suggestions for query formulation based on user input.\\\\n3. Capture user input and send to the chatbot for processing.\", \"Title\": \"User Interface for Medical Queries\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Store user interactions in a JSON file (if needed for local reference).\\\\n2. Retrieve past interactions when requested by the user (if needed for local reference).\\\\n3. Display past interactions in a user-friendly format (if needed for local reference).\", \"Title\": \"Chatbot Interaction History\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Analyze user queries for keywords.\\\\n2. Match keywords with a predefined list of medical topics.\\\\n3. Suggest relevant topics based on the analysis.\", \"Title\": \"Related Topics Suggestion\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Provide a rating system for users to rate responses.\\\\n2. Capture user comments for qualitative feedback.\\\\n3. Store feedback in a JSON file for analysis.\", \"Title\": \"User Feedback Mechanism\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Use the provided JSON dataset for training the AI model from the specified link: https://storage.googleapis.com/kagglesdsdata/datasets/1569359/2583511/intents.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20241231%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241231T094022Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=029130c1444e4a1e5461989df4d61d9e2b18cd3d0f9a697aee8468e7567cb2414430f9a00018fccc6cb7f40b0488baf712a63d99fbcb4d5892e539b31699ba005e860668c2f8444220c4f974058da9eb9fe1c38310c11a5ced6e5c7190f17bfcc473f19f85d015bc7fcf90b8b135f2a586ea73dba079ac35fbbb5080b3693297e22b78cf0209458a5d3ea71a7b1857d3da23d53e146e918954eefba55a49be5cd598df4cbbf91c9210ac4eb82bcc8fb11cd8eb810bc2005bcf2c37d0370b4a078806d844a5c97b633a353690211273e35337692bb9d807d1cda230864368eb5edf25fb8adc831511e404743b8215660313aa6ebf84ad8e85817af011f8920150.\", \"Title\": \"Self-Training AI Model\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Track response accuracy and user satisfaction metrics.\\\\n2. Generate reports on AI model performance.\", \"Title\": \"AI Model Performance Monitoring\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Implement CRUD operations for JSON data.\\\\n2. Abstract data handling complexities for the chatbot.\\\\n3. Ensure efficient data retrieval and storage.\", \"Title\": \"Data Access Layer for JSON Dataset\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Design data structures to accommodate growth.\\\\n2. Implement caching mechanisms for frequently accessed data.\\\\n3. Monitor performance to ensure scalability.\", \"Title\": \"Scalable Data Handling System\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Implement encryption for user data in transit and at rest.\\\\n2. Ensure compliance with GDPR regulations.\", \"Title\": \"Security and Compliance Measures\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Create unit tests for individual components.\\\\n2. Implement integration tests for overall functionality.\", \"Title\": \"Automated Testing Suite\"}', '{\"Type\": \"Algorithm\", \"Details\": \"1. Set up GitHub Actions for automated builds.\\\\n2. Implement testing stages in the pipeline.\", \"Title\": \"CI/CD Pipeline Implementation\"}'], 'Sequence': ['{\"Description\": \"This sequence diagram illustrates the interaction between the user, client, chatbot, and external API for processing a medical query.\", \"Type\": \"Sequence\", \"Title\": \"User Interaction Sequence\", \"Diagram\": \"sequenceDiagram\\\\n    actor User\\\\n    participant Client\\\\n    participant Chatbot\\\\n    participant ExternalAPI\\\\n\\\\n    User->>Client: Enter Medical Query\\\\n    Client->>Chatbot: Send Query\\\\n    Chatbot->>ExternalAPI: Request Data\\\\n    ExternalAPI-->>Chatbot: Return Data\\\\n    Chatbot-->>Client: Provide Response\\\\n    Client-->>User: Display Response\"}'], 'StateDiagram': ['{\"Type\": \"StateDiagram\", \"Title\": \"AI Model Training State\", \"Diagram\": \"stateDiagram-v2\\\\n    [*] --> Idle: System Start\\\\n    Idle --> CollectingData: User Interaction\\\\n    CollectingData --> Training: Sufficient Data Collected\\\\n    Training --> Evaluating: Model Trained\\\\n    Evaluating --> Deploying: Evaluation Successful\\\\n    Deploying --> Monitoring: Model Deployed\\\\n    Monitoring --> [*]: Continuous Monitoring\\\\n    Evaluating --> Retraining: Evaluation Failed\\\\n    Retraining --> Training: Retrain Model\"}'], 'UnitTest': ['{\"Description\": \"Test the user input handling mechanism to ensure that it correctly processes valid medical queries and provides appropriate suggestions for query formulation. The test will simulate user input through the UI and check the response from the component.\", \"Type\": \"UnitTest\", \"ExpectedResult\": \"The component should accept valid queries and display relevant suggestions without errors.\", \"Title\": \"Unit Test: Validate User Input Handling\"}', '{\"Description\": \"Test the functionality that retrieves the interaction history for a user. This will involve simulating a user request to access their past interactions and verifying that the correct data is returned.\", \"Type\": \"UnitTest\", \"ExpectedResult\": \"The component should return the correct interaction history for the user, displaying all past queries and responses.\", \"Title\": \"Unit Test: Interaction History Retrieval\"}', '{\"Description\": \"Test the self-training mechanism of the AI model to ensure it learns from user interactions. This will involve simulating user interactions and checking if the model updates its knowledge base accordingly.\", \"Type\": \"UnitTest\", \"ExpectedResult\": \"The AI model should show improved response accuracy based on the simulated user interactions.\", \"Title\": \"Unit Test: AI Model Self-Training\"}'], 'IntegrationTest': ['{\"Description\": \"Test the integration between the user interface and the AI model. This will involve simulating user queries through the UI and verifying that the AI model processes these queries and returns appropriate responses.\", \"Type\": \"IntegrationTest\", \"ExpectedResult\": \"The UI should correctly display responses generated by the AI model based on user queries.\", \"Title\": \"Integration Test: User Interface and AI Model Interaction\"}', '{\"Description\": \"Test the integration of the data access layer with the JSON dataset. This will involve performing CRUD operations and verifying that the data is correctly managed and retrieved.\", \"Type\": \"IntegrationTest\", \"ExpectedResult\": \"The data access layer should successfully perform CRUD operations on the JSON dataset without errors.\", \"Title\": \"Integration Test: Data Access Layer Functionality\"}', '{\"Description\": \"Test the integration with external APIs for medical data retrieval. This will involve simulating API calls and verifying that the component correctly handles the responses.\", \"Type\": \"IntegrationTest\", \"ExpectedResult\": \"The component should successfully retrieve and display medical data from external APIs.\", \"Title\": \"Integration Test: External API Integration for Medical Data\"}'], 'PerformanceTest': ['{\"Description\": \"Test the performance of the component under load by simulating multiple concurrent users interacting with the chatbot. This will measure response times and system behavior under stress.\", \"Type\": \"PerformanceTest\", \"ExpectedResult\": \"The system should maintain acceptable response times (under 2 seconds) even with 100 concurrent users.\", \"Title\": \"Performance Test: Load Handling for Concurrent Users\"}', '{\"Description\": \"Measure the response time of the AI model when processing user queries. This will involve sending a series of queries and recording the time taken for responses.\", \"Type\": \"PerformanceTest\", \"ExpectedResult\": \"The AI model should respond to queries within 1 second on average.\", \"Title\": \"Performance Test: AI Model Response Time\"}', '{\"Description\": \"Test the speed of data retrieval from the JSON dataset under various load conditions. This will involve measuring the time taken to access and return data.\", \"Type\": \"PerformanceTest\", \"ExpectedResult\": \"Data retrieval should occur within 500 milliseconds under normal load conditions.\", \"Title\": \"Performance Test: Data Retrieval Speed from JSON\"}'], 'RobustnessTest': ['{\"Description\": \"Test how the component handles invalid user input, such as empty queries or nonsensical text. This will ensure that the system does not crash and provides appropriate feedback to the user.\", \"Type\": \"RobustnessTest\", \"ExpectedResult\": \"The component should gracefully handle invalid input and display an error message without crashing.\", \"Title\": \"Robustness Test: Handling Invalid User Input\"}', '{\"Description\": \"Test the component\\'s behavior when external APIs fail to respond. This will ensure that the system can handle such failures without affecting user experience.\", \"Type\": \"RobustnessTest\", \"ExpectedResult\": \"The component should display a user-friendly error message and continue functioning without crashing.\", \"Title\": \"Robustness Test: API Failure Handling\"}', '{\"Description\": \"Test how the component reacts to corrupted data in the JSON dataset. This will ensure that the system can handle data integrity issues without crashing.\", \"Type\": \"RobustnessTest\", \"ExpectedResult\": \"The component should detect data corruption and provide an appropriate error message without crashing.\", \"Title\": \"Robustness Test: Data Corruption Handling\"}'], 'local_backend_service': [], 'asset_images_b64': {}, 'available_assets': []}",
+  "tasks": {
+    "Task1": {
+      "description": "Project Setup and Initial Analysis",
+      "task_description": "Set up the React project and analyze the training dataset structure",
+      "status": "to-do",
+      "details": "Initialize React project, analyze JSON dataset structure from the provided link, and plan component architecture. Technologies: React.js, Node.js environment. Key focus: Setting up development environment and understanding data structure.",
+      "subtasks": {
+        "Task1SubTask1": {
+          "description": "Analyze JSON dataset structure and content",
+          "status": "to-do",
+          "micro_agent": "SearchAgent",
+          "details": "Download and analyze the training dataset from the provided link to understand its structure and content for chatbot training"
+        },
+        "Task1SubTask2": {
+          "description": "Initialize React project structure",
+          "status": "completed",
+          "micro_agent": "CodeAnalysisAgent",
+          "details": "React project already initialized with basic structure in /home/kavia/workspace/Chatbot-/chatbot-ui/"
+        },
+        "Task1SubTask3": {
+          "description": "Plan component architecture",
+          "status": "to-do",
+          "micro_agent": "CodeAnalysisAgent",
+          "details": "Design the component structure based on the requirements and dataset analysis"
+        }
+      }
+    },
+    "Task2": {
+      "description": "Chatbot UI Implementation",
+      "task_description": "Implement core chatbot UI components",
+      "status": "to-do",
+      "details": "Create React components for the chatbot interface including input field, chat display, and suggestion system. Focus on user experience and responsive design.",
+      "subtasks": {
+        "Task2SubTask1": {
+          "description": "Create chat interface components",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement React components for chat display and message history"
+        },
+        "Task2SubTask2": {
+          "description": "Implement query input system",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create input field component with query suggestions"
+        },
+        "Task2SubTask3": {
+          "description": "Add visual styling",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent,VisualVerificationAgent",
+          "details": "Style components using CSS for a professional and user-friendly interface"
+        }
+      }
+    },
+    "Task3": {
+      "description": "Chatbot Core Implementation",
+      "task_description": "Implement chatbot logic and data handling",
+      "status": "to-do",
+      "details": "Implement the core chatbot functionality including query processing, response generation using the JSON dataset, and interaction history management.",
+      "subtasks": {
+        "Task3SubTask1": {
+          "description": "Implement JSON data loading",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create utility functions to load and parse the JSON dataset"
+        },
+        "Task3SubTask2": {
+          "description": "Create query processing logic",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement functions to process user queries and match with dataset"
+        },
+        "Task3SubTask3": {
+          "description": "Add interaction history management",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement optional chat history storage and retrieval functionality"
+        }
+      }
+    },
+    "Task4": {
+      "description": "Fix Test and Build Issues",
+      "task_description": "Resolve test failures and build issues identified during test execution",
+      "status": "to-do",
+      "details": "Address compilation errors, failing tests, and improve error handling in the chatbot service. Key issues: Missing web-vitals dependency, chatbotService error handling tests failing, and test file organization.",
+      "subtasks": {
+        "Task4SubTask1": {
+          "description": "Install missing web-vitals dependency",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Added web-vitals ^3.5.0 to package.json dependencies and installed the package"
+        },
+        "Task4SubTask2": {
+          "description": "Fix chatbotService error handling",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Refactored chatbotService to use CommonJS modules, implemented dependency injection, improved error handling with custom error types, and created separate chatbotInstance.js for backward compatibility"
+        },
+        "Task4SubTask3": {
+          "description": "Consolidate and fix test files",
+          "status": "in-progress",
+          "micro_agent": "TestCodeWritingAgent",
+          "details": "Consolidating chatbotService test files and updating tests to use new dependency injection approach"
+        },
+        "Task4SubTask4": {
+          "description": "Re-run test suite",
+          "status": "to-do",
+          "micro_agent": "TestExecutionAgent",
+          "details": "Execute the complete test suite to verify all fixes and ensure all tests pass"
+        }
+      }
+    },
+    "Task5": {
+      "description": "Implement Keyword-Based Question Handling",
+      "task_description": "Enhance chatbot to detect keywords from JSON dataset and generate appropriate questions",
+      "status": "in-progress",
+      "details": "Implement functionality to extract keywords from the JSON dataset, match them with user queries, and generate relevant questions. This includes analyzing patterns and responses in the dataset to identify key medical terms and concepts.",
+      "subtasks": {
+        "Task5SubTask1": {
+          "description": "Implement keyword extraction from JSON dataset",
+          "status": "in-progress",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create functions to analyze and extract relevant medical keywords from the JSON dataset patterns and responses. Store these in an easily searchable format."
+        },
+        "Task5SubTask2": {
+          "description": "Create keyword matching logic",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement fuzzy matching algorithm to detect keywords in user queries and match them with extracted dataset keywords. Include handling for partial matches and synonyms."
+        },
+        "Task5SubTask3": {
+          "description": "Implement question generation",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create logic to generate relevant follow-up questions based on detected keywords. Questions should help clarify user intent and provide more specific medical information."
+        },
+        "Task5SubTask4": {
+          "description": "Update UI for keyword suggestions",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent,VisualVerificationAgent",
+          "details": "Modify the chat interface to display keyword-based suggestions and generated questions in a user-friendly format."
+        },
+        "Task5SubTask5": {
+          "description": "Add tests for keyword functionality",
+          "status": "to-do",
+          "micro_agent": "TestCodeWritingAgent",
+          "details": "Create comprehensive test suite for keyword extraction, matching, and question generation functionality."
+        }
+      }
+    },
+    "Task6": {
+      "description": "Enhance Medical Theme and UI",
+      "task_description": "Implement comprehensive medical theme with healthcare styling and icons",
+      "status": "to-do",
+      "details": "Create a professional medical theme using Material-UI components, healthcare-specific icons, and appropriate color schemes. Focus on creating a visually appealing and trustworthy medical chatbot interface.",
+      "subtasks": {
+        "Task6SubTask1": {
+          "description": "Update medical theme configuration",
+          "status": "in-progress",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Enhance medical-theme.js with comprehensive healthcare color palette, typography, and component styling. Include standard medical colors (light blues, mint greens, clean whites) and proper spacing."
+        },
+        "Task6SubTask2": {
+          "description": "Add medical icons and visual elements",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Integrate appropriate medical icons from @mui/icons-material package. Add healthcare-specific visual elements like pulse animations and medical symbols."
+        },
+        "Task6SubTask3": {
+          "description": "Implement enhanced message styling",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Style chat messages with medical theme elements, including distinct styling for user and bot messages. Add medical-themed loading indicators and animations."
+        },
+        "Task6SubTask4": {
+          "description": "Verify visual enhancements",
+          "status": "to-do",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Verify that all visual enhancements maintain proper accessibility standards and responsive design. Check color contrast ratios and touch target sizes."
+        },
+        "Task6SubTask5": {
+          "description": "Fix chat panel contrast issues",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implemented WCAG 2.1 AA compliant color scheme with proper contrast ratios:\n1. Updated medical-theme.js with new color palette\n2. Enhanced ChatbotComponent styling\n3. Added proper contrast for all text elements\n4. Implemented consistent spacing"
+        }
+      }
+    },
+    "Task7": {
+      "description": "Message Styling Improvements",
+      "task_description": "Improve chat message styling for better accessibility and visual appearance",
+      "status": "to-do",
+      "details": "Update the chat message styling to improve contrast ratios and fix message bubble arrow alignment. Focus on WCAG compliance and visual consistency.",
+      "subtasks": {
+        "Task7SubTask1": {
+          "description": "Adjust bot message background color",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Updated bot message background color from #32CD32 to #2E7D32 for better contrast with white text. New color meets WCAG 2.1 AA requirements for text contrast ratio (4.5:1)"
+        },
+        "Task7SubTask2": {
+          "description": "Fix message bubble arrow alignment",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implemented CSS pseudo-elements for message bubble arrows with proper positioning and consistent styling for both user and bot messages"
+        },
+        "Task7SubTask3": {
+          "description": "Verify styling improvements",
+          "status": "in-progress",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Verify that the updated styling meets accessibility requirements and maintains visual consistency across different viewport sizes."
+        }
+      }
+    },
+    "Task8": {
+      "description": "Fix Message Display Issues",
+      "task_description": "Resolve duplicate message display and improve message handling",
+      "status": "to-do",
+      "details": "Fix issues with duplicate message display after page refresh and improve message handling in the ChatbotComponent. Focus on proper state management and local storage integration.",
+      "subtasks": {
+        "Task8SubTask1": {
+          "description": "Fix duplicate message display",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Fixed duplicate message display by moving chat history loading to useEffect hook and implementing message deduplication logic"
+        },
+        "Task8SubTask2": {
+          "description": "Improve message state management",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Enhance message state handling to prevent duplicate messages and ensure proper message order. Implement proper cleanup of message state when component unmounts."
+        },
+        "Task8SubTask3": {
+          "description": "Add message deduplication",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implemented message deduplication logic using timestamp, text, and sender comparison to prevent duplicate messages"
+        },
+        "Task8SubTask4": {
+          "description": "Verify message handling",
+          "status": "to-do",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Test the chat interface to ensure messages are displayed correctly without duplicates after page refresh and during normal operation."
+        }
+      }
+    },
+    "Task9": {
+      "description": "Clear Chat Functionality",
+      "task_description": "Implement clear chat button and functionality to clear chat history",
+      "status": "to-do",
+      "details": "Add a clear chat button to the chat interface that allows users to clear all previous chat messages and local storage history. Include confirmation dialog and visual feedback.",
+      "subtasks": {
+        "Task9SubTask1": {
+          "description": "Add clear chat button",
+          "status": "in-progress",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Add a clear chat button to the chat interface using Material-UI IconButton with appropriate icon and styling"
+        },
+        "Task9SubTask2": {
+          "description": "Implement clear chat functionality",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implemented clear chat functionality with confirmation dialog using Material-UI Dialog component and proper error handling"
+        },
+        "Task9SubTask3": {
+          "description": "Add visual feedback",
+          "status": "completed",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Added Snackbar with Alert component for success/error notifications and loading state for clear chat action"
+        },
+        "Task9SubTask4": {
+          "description": "Verify clear chat functionality",
+          "status": "to-do",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Test the clear chat feature to ensure it properly clears all messages and local storage"
+        }
+      }
+    }
+  },
+  "next_task_id": 10
+}
